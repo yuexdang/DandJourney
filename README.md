@@ -8,21 +8,21 @@
   <a href="#">
     <img alt="语言类型" src="https://img.shields.io/badge/language-Python-blue?style=flat&logo=python&logoColor=white" />
   </a>
+  
   <a href="https://github.com/yuexdang/DandJourney/blob/main/UpdateLogs.md">
     <img alt="更新日志" src="https://img.shields.io/badge/Update--Log-ClickHere-brightgreen?style=flat&logo=uploaded&logoColor=white" />
   </a>
 
-  <a href="#">
-    <img alt="访客数量" src="https://visitor-badge.glitch.me/badge?page_id=yuexdang.DandJourney" />
-  </a>
   <a href="https://github.com/yuexdang/DandJourney/releases">
-    <img alt="更新版本" src="https://img.shields.io/github/downloads/yuexdang/DandJourney/total.svg?style=flat" />
+    <img alt="更新版本" src="https://img.shields.io/github/downloads/yuexdang/DandJourney/total.svg?style=flat&logo=docusign&logoColor=white" />
   </a>
+  
   <a href="#">
-    <img alt="支持平台" src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord" />
+    <img alt="支持平台" src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord&logoColor=white" />
   </a>
+  
    <a href="#">
-    <img alt="支持平台" src="https://img.shields.io/badge/chat-wechat-green?style=flat&logo=wechat" />
+    <img alt="支持平台" src="https://img.shields.io/badge/chat-wechat-green?style=flat&logo=wechat&logoColor=white" />
   </a>
 
 
@@ -40,9 +40,9 @@ stable-diffusion虽然免费，但是基于神经网络的训练十分消耗自�
 
 ### 项目进程
 
-在没有更好的载体的情况之下，这个项目会持续更新
+在没有更好的载体的情况之下，这个项目会持续更新。
 
-项目是**开源**的，大家都希望能够一起合作去制作这样一款Bot，方便平时的使用。如果拿着这个项目去**盈利**，或者非项目组成员拿这个当噱头去**引流**，我的评价是好死。
+项目是**开源**的，大家都希望能够一起合作去制作这样一款Bot，方便平时的使用。如果非项目组成员拿着这个项目去**盈利**，或者拿这个当噱头去**引流**，我的评价是好死。
 
 # 功能列表
 |  功能  | 简介 | 状态 |
@@ -62,23 +62,23 @@ stable-diffusion虽然免费，但是基于神经网络的训练十分消耗自�
 
 可能你是从 [MidJourney-Wrapper（Yuexdang重构版）](https://github.com/yuexdang/MidJourney-Wrapper) 这里来的。我想再次说明一下这两个项目的关系。
 
-这次的重构和之前原作者的代码已经大不一样了，使用的是discord-py-interactions框架进行的搭建，爬虫部分也进行了修改，整体代码进行了降耦合，并打算在后面进行API抽离。
+这次的重构和之前原作者的代码已经大不一样了，使用的是discord-py-interactions框架进行的搭建，爬虫部分也进行了修改，整体代码进行了降耦合，并打算在后面进行API抽离。所以我不打算再称之为重构版本或者是继承版本，而是从头开始做起的一个新项目。
 
 在此再次感谢原作者[Wildric-Auric](https://github.com/Wildric-Auric)与我最早接触到的版本[MidJourney-Wrapper](https://github.com/Wildric-Auric/MidJourney-Wrapper)，最原始的思路对我的帮助很大。
 
 # 使用用法
 
-具体的使用方法详见[使用文档](https://github.com/yuexdang/DandJourney/blob/main/Usage.md)
+具体的使用方法详见[使用文档](https://github.com/yuexdang/DandJourney/blob/main/Usage.md).
 
 # 更新日志
 
-更新日志详见[更新日志](https://github.com/yuexdang/DandJourney/blob/main/UpdateLogs.md)
+更新日志详见[更新日志](https://github.com/yuexdang/DandJourney/blob/main/UpdateLogs.md)。
 
 # 志同道合的朋友们（贡献者）
 
 | 项目组 | 功能代码研究 | 图片风格化研究 | 文档编纂与维护 | Special UI |
 | ---- | ---- | ---- | ---- | ---- |
-| 成员  | [DronerC](https://github.com/DronerC)、[JerryLiu666](https://github.com/JerryLiu666) | [SCkang21](https://github.com/SCkang21)、[unbengab19](https://github.com/unbengab19)、[SimonYu13](https://github.com/SimonYu13)、[xll](www.baidu.com)、[lll](www.baidu.com) |  [thc](www.baidu.com) | [cpg](www.baidu.com) |
+| 成员  | [DronerC](https://github.com/DronerC)、[JerryLiu666](https://github.com/JerryLiu666) | [SCkang21](https://github.com/SCkang21)、[unbengab19](https://github.com/unbengab19)、[SimonYu13](https://github.com/SimonYu13)、[mercuryxlloo](https://github.com/mercuryxlloo)、[Lin600](https://github.com/Lin600) |  [Zhaoci0204](https://github.com/Zhaoci0204) | [ppapatrick](https://github.com/ppapatrick) |
 
 ### 我也想变成贡献者
 
