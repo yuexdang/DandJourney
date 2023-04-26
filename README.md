@@ -9,11 +9,11 @@
   <a href="#">
     <img alt="语言类型" src="https://img.shields.io/badge/language-Python-blue?style=flat&logo=python&logoColor=white" />
   </a>
-  <a href="https://github.com/yuexdang/DandJourneyOffline/blob/main/Doc/UpdateLogs.md">
+  <a href="https://github.com/yuexdang/DandJourney/blob/main/Doc/UpdateLogs.md">
     <img alt="更新日志" src="https://img.shields.io/badge/Update--Log-ClickHere-brightgreen?style=flat&logo=uploaded&logoColor=white" />
   </a>
-  <a href="https://github.com/yuexdang/DandJourneyOffline/releases">
-    <img alt="更新版本" src="https://img.shields.io/github/downloads/yuexdang/DandJourneyOffline/total.svg?style=flat&logo=docusign&logoColor=white" />
+  <a href="https://github.com/yuexdang/DandJourney/releases">
+    <img alt="更新版本" src="https://img.shields.io/github/downloads/yuexdang/DandJourney/total.svg?style=flat&logo=docusign&logoColor=white" />
   </a>
   <a href="#">
     <img alt="支持平台" src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord&logoColor=white" />
@@ -27,7 +27,7 @@
   <a href="#">
     <img alt="zh-cn" src="https://img.shields.io/badge/-%E4%B8%AD%E6%96%87-blue" />
   </a> 
-  <a href="https://github.com/yuexdang/DandJourneyOffline/blob/main/Doc/README_EN.md">
+  <a href="https://github.com/yuexdang/DandJourney/blob/main/Doc/README_EN.md">
     <img alt="en" src="https://img.shields.io/badge/-ENGLISH-lightgrey" />
   </a> 
 </p>
@@ -74,11 +74,11 @@ stable-diffusion虽然免费，但是基于神经网络的训练十分消耗自�
 
 # 使用用法
 
-具体的使用方法详见[使用文档](https://github.com/yuexdang/DandJourneyOffline/blob/main/Doc/Usage.md).
+具体的使用方法详见[使用文档](https://github.com/yuexdang/DandJourney/blob/main/Doc/Usage.md).
 
 # 更新日志
 
-更新日志详见[更新日志](https://github.com/yuexdang/DandJourneyOffline/blob/main/Doc/UpdateLogs.md)。
+更新日志详见[更新日志](https://github.com/yuexdang/DandJourney/blob/main/Doc/UpdateLogs.md)。
 
 # 志同道合的朋友们（贡献者）
 
