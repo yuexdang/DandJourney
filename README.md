@@ -1,5 +1,6 @@
 <p align="center">
-  <img width="180" src="https://user-images.githubusercontent.com/56034408/231060315-dc30c7ab-875a-46b5-95a1-ebd14d6a0501.png" alt="DandJourney">
+  <img width="500" src="https://user-images.githubusercontent.com/56034408/233843417-32cdc382-88db-4e9e-8d63-272b19d2d5c6.png" alt="DandJourney">
+
   <h1 align="center">DandJourney</h1>
   <p align="center"> 用爱发电的MidJourney消息转发机器人 </p>
 </p>
@@ -8,23 +9,28 @@
   <a href="#">
     <img alt="语言类型" src="https://img.shields.io/badge/language-Python-blue?style=flat&logo=python&logoColor=white" />
   </a>
-  
-  <a href="https://github.com/yuexdang/DandJourney/blob/main/UpdateLogs.md">
+  <a href="https://github.com/yuexdang/DandJourneyOffline/blob/main/Doc/UpdateLogs.md">
     <img alt="更新日志" src="https://img.shields.io/badge/Update--Log-ClickHere-brightgreen?style=flat&logo=uploaded&logoColor=white" />
   </a>
-
-  <a href="https://github.com/yuexdang/DandJourney/releases">
-    <img alt="更新版本" src="https://img.shields.io/github/downloads/yuexdang/DandJourney/total.svg?style=flat&logo=docusign&logoColor=white" />
+  <a href="https://github.com/yuexdang/DandJourneyOffline/releases">
+    <img alt="更新版本" src="https://img.shields.io/github/downloads/yuexdang/DandJourneyOffline/total.svg?style=flat&logo=docusign&logoColor=white" />
   </a>
-  
   <a href="#">
     <img alt="支持平台" src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord&logoColor=white" />
   </a>
-  
    <a href="#">
     <img alt="支持平台" src="https://img.shields.io/badge/chat-wechat-green?style=flat&logo=wechat&logoColor=white" />
   </a>
+</p>
 
+<p align="center">
+  <a href="#">
+    <img alt="zh-cn" src="https://img.shields.io/badge/-%E4%B8%AD%E6%96%87-blue" />
+  </a> 
+  <a href="https://github.com/yuexdang/DandJourneyOffline/blob/main/Doc/README_EN.md">
+    <img alt="en" src="https://img.shields.io/badge/-ENGLISH-lightgrey" />
+  </a> 
+</p>
 
 # 关于DandJourney
 
@@ -62,23 +68,92 @@ stable-diffusion虽然免费，但是基于神经网络的训练十分消耗自�
 
 可能你是从 [MidJourney-Wrapper（Yuexdang重构版）](https://github.com/yuexdang/MidJourney-Wrapper) 这里来的。我想再次说明一下这两个项目的关系。
 
-这次的重构和之前原作者的代码已经大不一样了，使用的是discord-py-interactions框架进行的搭建，爬虫部分也进行了修改，整体代码进行了降耦合，并打算在后面进行API抽离。所以我不打算再称之为重构版本或者是继承版本，而是从头开始做起的一个新项目。
+这次的重构和之前原作者的代码已经大不一样了，使用的是`discord-py-interactions`框架进行的搭建，爬虫部分也进行了修改，整体代码进行了降耦合，并打算在后面进行API抽离。所以我不打算再称之为重构版本或者是继承版本，而是从头开始做起的一个新项目。
 
 在此再次感谢原作者[Wildric-Auric](https://github.com/Wildric-Auric)与我最早接触到的版本[MidJourney-Wrapper](https://github.com/Wildric-Auric/MidJourney-Wrapper)，最原始的思路对我的帮助很大。
 
 # 使用用法
 
-具体的使用方法详见[使用文档](https://github.com/yuexdang/DandJourney/blob/main/Usage.md).
+具体的使用方法详见[使用文档](https://github.com/yuexdang/DandJourneyOffline/blob/main/Doc/Usage.md).
 
 # 更新日志
 
-更新日志详见[更新日志](https://github.com/yuexdang/DandJourney/blob/main/UpdateLogs.md)。
+更新日志详见[更新日志](https://github.com/yuexdang/DandJourneyOffline/blob/main/Doc/UpdateLogs.md)。
 
 # 志同道合的朋友们（贡献者）
 
-| 项目组 | 功能代码研究 | 图片风格化研究 | 文档编纂与维护 | Special UI |
-| ---- | ---- | ---- | ---- | ---- |
-| 成员  | [DronerC](https://github.com/DronerC)、[JerryLiu666](https://github.com/JerryLiu666) | [SCkang21](https://github.com/SCkang21)、[unbengab19](https://github.com/unbengab19)、[SimonYu13](https://github.com/SimonYu13)、[mercuryxlloo](https://github.com/mercuryxlloo)、[Lin600](https://github.com/Lin600) |  [Zhaoci0204](https://github.com/Zhaoci0204) | [ppapatrick](https://github.com/ppapatrick) |
+
+<table>
+<thead>
+  <tr>
+    <th colspan="3">贡献成员列表（各部分贡献自高向低排序）</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <th>分类</td>
+    <th>成员</td>
+    <th>贡献说明</td>
+  </tr>
+  <tr>
+    <td>框架构建</td>
+    <td><a href="https://github.com/yuexdang">yuexdang</a></td>
+    <td>整体代码功能实现、需求实现</td>
+  </tr>
+  <tr>
+    <td rowspan="2">功能代码研究</td>
+    <td><a href="https://github.com/DronerC">DronerC</a></td>
+    <td>代码抽离、功能发散</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/JerryLiu666">JerryLiu666</a></td>
+    <td>代码抽离、功能发散</td>
+  </tr>
+  <tr>
+    <td rowspan="5">图片风格化研究</td>
+    <td><a href="https://github.com/Lin600">Lin600</a></td>
+    <td>图像风格化</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/mercuryxlloo">mercuryxlloo</a></td>
+    <td>图像风格化</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/SCkang21">SCkang21</a></td>
+    <td>图像风格化</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/unbengab19">unbengab19</a></td>
+    <td>图像风格化</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/SimonYu13">SimonYu13</a></td>
+    <td>图像风格化</td>
+  </tr>
+  <tr>
+    <td>文档编纂与维护</td>
+    <td><a href="https://github.com/Zhaoci0204">Zhaoci0204</a></td>
+    <td>文档编写</td>
+  </tr>
+  <tr>
+    <td>Special UI</td>
+    <td><a href="https://github.com/ppapatrick">ppapatrick</a></td>
+    <td>图像制作，Icon制作</td>
+  </tr>
+  <tr>
+    <td>其他贡献者</td>
+    <td><a href="https://github.com/liustar1989">liustar1989</a></td>
+    <td>提供部分wechat连接思路</td>
+  </tr>
+  <tr>
+  <th></th>
+  <th></th>
+  <th></th>
+  </tr>
+</tbody>
+</table>
+
+
 
 ### 我也想变成贡献者
 
