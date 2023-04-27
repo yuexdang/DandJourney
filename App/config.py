@@ -8,7 +8,7 @@ VenvNeed = ["BOT_TOKEN", "SERVER_ID", "VIP_TOKEN", "CHANNEL_ID", "CHANNEL_SIGN",
 #strings 格式
 
 BOT_TOKEN = VenvValue.get('BOT_TOKEN') if "BOT_TOKEN" in VenvValue else "_Add your BOT_TOKEN HERE_"
-BOT_NAME = "DandjourneyTester"
+BOT_NAME = VenvValue.get('BOT_NAME') if "BOT_NAME" in VenvValue else "_Add your BOT_NAME HERE_"
 
 SERVER_ID = VenvValue.get('SERVER_ID') if "SERVER_ID" in VenvValue else "_Add your SERVER_ID HERE_"
 VIP_TOKEN = VenvValue.get('VIP_TOKEN') if "VIP_TOKEN" in VenvValue else "_Add your VIP_TOKEN HERE_"
