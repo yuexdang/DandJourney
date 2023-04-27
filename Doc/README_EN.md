@@ -9,11 +9,11 @@
   <a href="#">
     <img alt="Language type" src="https://img.shields.io/badge/language-Python-blue?style=flat&logo=python&logoColor=white" />
   </a>
-  <a href="https://github.com/yuexdang/DandJourneyOffline/blob/main/Doc/UpdateLogs.md">
+  <a href="https://github.com/yuexdang/DandJourney/blob/main/Doc/UpdateLogs.md">
     <img alt="Update log" src="https://img.shields.io/badge/Update--Log-ClickHere-brightgreen?style=flat&logo=uploaded&logoColor=white" />
   </a>
-  <a href="https://github.com/yuexdang/DandJourneyOffline/releases">
-    <img alt="Updated version" src="https://img.shields.io/github/downloads/yuexdang/DandJourneyOffline/total.svg?style=flat&logo=docusign&logoColor=white" />
+  <a href="https://github.com/yuexdang/DandJourney/releases">
+    <img alt="Updated version" src="https://img.shields.io/github/downloads/yuexdang/DandJourney/total.svg?style=flat&logo=docusign&logoColor=white" />
   </a>
   <a href="#">
     <img alt="Supported platforms" src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord&logoColor=white" />
@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/yuexdang/DandJourneyOffline/blob/main/README.md">
+    <a href="https://github.com/yuexdang/DandJourney/blob/main/README.md">
       <img alt="zh-cn" src="https://img.shields.io/badge/-%E4%B8%AD%E6%96%87-lightgrey" />
     </a> 
     <a href="#">
@@ -80,12 +80,12 @@ Once again, I would like to thank the original author[Wildric-Auric](https://git
 
 > ### **Local deployment**
 >
->For detailed usage instructions, please refer to the[User Guide](https://github.com/yuexdang/DandJourneyOffline/blob/main/Doc/Usage.md)..
+>For detailed usage instructions, please refer to the[User Guide](https://github.com/yuexdang/DandJourney/blob/main/Doc/Usage.md)..
 
 
 # Update log
 
- For the update log, please refer to the[Update Logs](https://github.com/yuexdang/DandJourneyOffline/blob/main/Doc/UpdateLogs.md)。
+ For the update log, please refer to the[Update Logs](https://github.com/yuexdang/DandJourney/blob/main/Doc/UpdateLogs.md)。
 
 # Like-minded friends（contributors）
 
