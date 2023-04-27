@@ -23,7 +23,7 @@ def CreateAboutEmb():
     embed.add_field(name = '——'*15, value = "", inline = False)
     embed.add_field(name = '当前机器人名称', value = agentBot["BotInfo"]["Name"], inline = True)
     embed.add_field(name = '当前版本', value = agentBot["BotInfo"]["version"], inline = True)
-    embed.set_footer(text = 'Made By Yuexdang Universe D Team', icon_url = 'https://user-images.githubusercontent.com/56034408/233843417-32cdc382-88db-4e9e-8d63-272b19d2d5c6.png')
+    embed.set_footer(text = 'Made By Yuexdang Universe D Team', icon_url = 'https://user-images.githubusercontent.com/56034408/234861839-7cddd103-e597-4029-b514-063c4bca5227.png')
     embed.set_image(url='https://opengraph.githubassets.com/70433925c505ce837dda9bab06af0101f3ac5b592acc6763a52b04b9ef059142/yuexdang/DandJourney')
     return embed
 

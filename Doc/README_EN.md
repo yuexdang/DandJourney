@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="500" src="https://user-images.githubusercontent.com/56034408/233843417-32cdc382-88db-4e9e-8d63-272b19d2d5c6.png" alt="DandJourney">
+  <img width="500" src="https://user-images.githubusercontent.com/56034408/234861839-7cddd103-e597-4029-b514-063c4bca5227.png" alt="DandJourney">
   
   <h1 align="center">DandJourney</h1>
   <p align="center"> Powered by love MidJourney message forwarding bot </p>
@@ -9,11 +9,11 @@
   <a href="#">
     <img alt="Language type" src="https://img.shields.io/badge/language-Python-blue?style=flat&logo=python&logoColor=white" />
   </a>
-  <a href="https://github.com/yuexdang/DandJourney/blob/main/Doc/UpdateLogs.md">
+  <a href="https://github.com/yuexdang/DandJourneyOffline/blob/main/Doc/UpdateLogs.md">
     <img alt="Update log" src="https://img.shields.io/badge/Update--Log-ClickHere-brightgreen?style=flat&logo=uploaded&logoColor=white" />
   </a>
-  <a href="https://github.com/yuexdang/DandJourney/releases">
-    <img alt="Updated version" src="https://img.shields.io/github/downloads/yuexdang/DandJourney/total.svg?style=flat&logo=docusign&logoColor=white" />
+  <a href="https://github.com/yuexdang/DandJourneyOffline/releases">
+    <img alt="Updated version" src="https://img.shields.io/github/downloads/yuexdang/DandJourneyOffline/total.svg?style=flat&logo=docusign&logoColor=white" />
   </a>
   <a href="#">
     <img alt="Supported platforms" src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord&logoColor=white" />
@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/yuexdang/DandJourney/blob/main/README.md">
+    <a href="https://github.com/yuexdang/DandJourneyOffline/blob/main/README.md">
       <img alt="zh-cn" src="https://img.shields.io/badge/-%E4%B8%AD%E6%96%87-lightgrey" />
     </a> 
     <a href="#">
@@ -74,11 +74,18 @@ Once again, I would like to thank the original author[Wildric-Auric](https://git
 
 # Usage
 
-For detailed usage instructions, please refer to the[User Guide](https://github.com/yuexdang/DandJourney/blob/main/Doc/Usage.md).
+> ### **Rapid Deployment**
+>
+>[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/aWVdcq?referralCode=SvAPpE)
+
+> ### **Local deployment**
+>
+>For detailed usage instructions, please refer to the[User Guide](https://github.com/yuexdang/DandJourneyOffline/blob/main/Doc/Usage.md)..
+
 
 # Update log
 
- For the update log, please refer to the[Update Logs](https://github.com/yuexdang/DandJourney/blob/main/Doc/UpdateLogs.md)。
+ For the update log, please refer to the[Update Logs](https://github.com/yuexdang/DandJourneyOffline/blob/main/Doc/UpdateLogs.md)。
 
 # Like-minded friends（contributors）
 

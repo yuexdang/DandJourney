@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="500" src="https://user-images.githubusercontent.com/56034408/233843417-32cdc382-88db-4e9e-8d63-272b19d2d5c6.png" alt="DandJourney">
+  <img width="500" src="https://user-images.githubusercontent.com/56034408/234861839-7cddd103-e597-4029-b514-063c4bca5227.png" alt="DandJourney">
   
   <h1 align="center">DandJourney SprintPlan</h1>
   <p align="center"> 用爱发电的MidJourney消息转发机器人 </p>
