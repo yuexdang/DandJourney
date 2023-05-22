@@ -1,5 +1,5 @@
-from .. import Settings as agentBot
+from .. import BotSettings
 
 from .Spider import DiscordPost
 
-PostAgent = DiscordPost(Bots = agentBot["BotCode"])
+PostAgent = DiscordPost()

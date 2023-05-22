@@ -9,11 +9,8 @@
   <a href="#">
     <img alt="Language type" src="https://img.shields.io/badge/language-Python-blue?style=flat&logo=python&logoColor=white" />
   </a>
-  <a href="https://github.com/yuexdang/DandJourney/blob/main/Doc/UpdateLogs.md">
+  <a href="./Docs/UpdateLogs.md">
     <img alt="Update log" src="https://img.shields.io/badge/Update--Log-ClickHere-brightgreen?style=flat&logo=uploaded&logoColor=white" />
-  </a>
-  <a href="https://github.com/yuexdang/DandJourney/releases">
-    <img alt="Updated version" src="https://img.shields.io/github/downloads/yuexdang/DandJourney/total.svg?style=flat&logo=docusign&logoColor=white" />
   </a>
   <a href="#">
     <img alt="Supported platforms" src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord&logoColor=white" />
@@ -24,7 +21,7 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/yuexdang/DandJourney/blob/main/README.md">
+    <a href="./README.md">
       <img alt="zh-cn" src="https://img.shields.io/badge/-%E4%B8%AD%E6%96%87-lightgrey" />
     </a> 
     <a href="#">
@@ -34,9 +31,9 @@
 
 # About DandJourney
 
-DandJourney is a proxy robot that encapsulates and extends Midjourney. It is primarily used to forward user demands to Midjourney (located on the Discord platform). With the proxy of the robot, multiple people can use one member account. Yes, there is no way to bypass Midjourney's membership mechanism.
+DandJourney is an agent robot that encapsulates and expands Midjourney.This robot is mainly used to forward the user's demands to Midjourney (located on the Discord platform). Through the agent of the robot, the user's robot use needs are balanced, and the robot expansion is tried on different platforms.
 
-- More platform support
+- More platform support(under development)
 - More custom features
 - More expansion space.
 
@@ -48,7 +45,9 @@ Although stable-diffusion is free, its neural network training is very resource-
 
 In the absence of a better platform, this project will continue to be updated.
 
-Project is**open source**,and we all hope to work together to create a Bot that is convenient for everyday use. If non-project members use this project for **profit** or use it as a gimmick for **promotion**, my review is not favorable.
+The project is open source, the Bot is only made for the convenience of daily use. Non-project team members are not allowed to use the project for **profit** or **attract people's 'attention'**. 
+
+**Statement**: This robot is for learning use only
 
 # List of features
 |  Function  | Brief Introduction | State |
@@ -80,12 +79,12 @@ Once again, I would like to thank the original author[Wildric-Auric](https://git
 
 > ### **Local deployment**
 >
->For detailed usage instructions, please refer to the[User Guide](https://github.com/yuexdang/DandJourney/blob/main/Doc/Usage.md)..
+>For detailed usage instructions, please refer to the[User Guide](./Docs/Usage.md)..
 
 
 # Update log
 
- For the update log, please refer to the[Update Logs](https://github.com/yuexdang/DandJourney/blob/main/Doc/UpdateLogs.md)。
+ For the update log, please refer to the[Update Logs](./Docs/UpdateLogs.md)。
 
 # Like-minded friends（contributors）
 
@@ -107,13 +106,17 @@ Once again, I would like to thank the original author[Wildric-Auric](https://git
     <td>Overall code function realization requirements realization</td>
   </tr>
   <tr>
-    <td rowspan="2">Functional code</td>
+    <td rowspan="3">Functional code</td>
     <td><a href="https://github.com/DronerC">DronerC</a></td>
     <td>Code pull function divergence</td>
   </tr>
   <tr>
     <td><a href="https://github.com/JerryLiu666">JerryLiu666</a></td>
     <td>Code pull function divergence</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/siyuekoo">siyuekoo</a></td>
+    <td>Front-end Code</td>
   </tr>
   <tr>
     <td rowspan="5">Image stylization</td>
@@ -147,14 +150,18 @@ Once again, I would like to thank the original author[Wildric-Auric](https://git
     <td>Image production,Icon production</td>
   </tr>
   <tr>
-    <td>Other contributors</td>
+    <td rowspan="2">Other contributors</td>
     <td><a href="https://github.com/liustar1989">liustar1989</a></td>
     <td>Provide some wechat connection ideas</td>
   </tr>
   <tr>
-  <th></th>
-  <th></th>
-  <th></th>
+    <td><a href="https://github.com/xxvcxxvc">xxvcxxvc</a></td>
+    <td>Image transfer logic and other code</td>
+  </tr>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
   </tr>
 </tbody>
 </table>

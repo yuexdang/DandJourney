@@ -1,5 +1,3 @@
-from .models import Settings, Banned_Word, DjPromptDic
+from .models import BotSettings, Banned_Word, DjPromptDic
 
-
-from .apis.DandJourney import bot
-from .apis.DandJourney import BotEvent, BotCommand, BotComponent
+from .apis.DiscordReply import BotAgent

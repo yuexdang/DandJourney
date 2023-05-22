@@ -6,7 +6,7 @@
 </p>
 
 # 安装方法
-<h3 align="center"> <a href="#机器人创建">Discord 机器人</a> | <a href="#机器人部署">DandJourney部署</a> | <a href="#三方平台">三方平台</a> | <a href="#控制台配置">Flask总控</a> </h3>
+<h3 align="center"> <a href="#机器人创建">Discord 机器人</a> | <a href="#机器人部署">DandJourney部署</a> | <a href="#三方平台">三方平台</a> | <a href="#控制台配置">Flask总控</a> | <a href="#配置参数表">配置参数表</a> </h3>
 
 ---
 ## 机器人创建
@@ -53,6 +53,9 @@
 > 在开发者工具 -> 网络 中找到最近的 **interactions** 请求，在请求标头中找到 **authorization: `VIP_TOKEN(String)`** 
 
 ### 自此，关于DandJourney宏观配置的**四个变量**已经收集完毕
+
+> Tips: 需要将机器人的配置设置为如图所示，以免自带参数影响图片生成
+> ![image](https://github-production-user-asset-6210df.s3.amazonaws.com/56034408/239992841-5fa33f9a-a278-4284-894b-7e173290376f.png)
 ---
 ## 机器人部署
 
@@ -61,10 +64,10 @@
 目前还缺失两个参数：**`BOT_NAME`** 和 **`CHANNEL_SIGN`**
 > `BOT_NAME` ☞ 机器人的名称
 >
-> `CHANNEL_SIGN` ☞ 是否需要适应不同频道(默认为False)
+> `CHANNEL_SIGN` ☞ 是否需要适应不同频道(默认为True)
 
 ### 快速部署
-> 已打包至Railway,初始化的时候把六个参数填入即可
+> 已打包至Railway,初始化的时候把参数填入即可
 >
 >[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/aWVdcq?referralCode=SvAPpE)
 
@@ -72,16 +75,13 @@
 
 > #### 初始化数据
 > ---
-> 在 [设置文档](https://github.com/yuexdang/DandJourney/blob/main/App/config.py) 中将各个参数填入（没见过的不用管，还在开发）
-> 
-> 如 BOT_TOKEN = VenvValue.get('BOT_TOKEN') if "BOT_TOKEN" in VenvValue else "_ Add your BOT_TOKEN HERE _ " 中，将" _ Add your BOT_TOKEN HERE _" 替换为你的 BOT_TOKEN 即可（注意：USE_MESSAGED_CHANNEL中填入的是CHANNEL_SIGN的值）
->
-> 或者自己初始化一下全局的环境变量，把几个参数添加至环境即可(需要在[__init__.py](https://github.com/yuexdang/DandJourney/blob/main/App/__init__.py)文件的**第一行**前初始化)
+> 在 [mainOffline.py](../mainOffline.py) 中填入所需参数
 
 > #### 运行代码
 > ---
-> 1. pip install [requirements.txt](https://github.com/yuexdang/DandJourney/blob/main/requirements.txt)
-> 2. run main.py
+> **Python 3.11+**
+> 1. pip install [requirements.txt](../requirements.txt) 
+> 2. run mainOffline.py
 > 3. 正常的反馈应该是好几个初始化完毕的提示
 
 ---
@@ -95,6 +95,25 @@
 ## 控制台配置
 
 还没做到这里，做完了再说
+
+---
+
+## 配置参数表
+
+DandJourney涉及的所有可配置参数如下表所示
+
+| 参数 | 配置 | 说明(没有/不需要则忽视) | 是否必须 |
+| ---- | ---- | ---- | ---- |
+|BOT_TOKEN|String|搭载机器人的令牌|True|
+|SERVER_ID|String|服务器ID|True|
+|VIP_TOKEN|String|拥有权限的账号Token|True|
+|CHANNEL_ID|String|初始频道|True|
+|BOT_NAME|String|机器人名字|True|
+|CHANNEL_SIGN|True|是否需要MJ跟随用户|True|
+|AGENT_CHANNEL|String|MJ消息汇总频道|False|
+|PROXY_URL|String|代理服务器链接|False|
+|PROXY_AUTH|Tuple|代理服务器账号密码|False|
+|MID_JOURNEY_ID|String|MJ机器人ID|False|
 
 ---
 

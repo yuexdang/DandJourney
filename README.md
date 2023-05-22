@@ -9,11 +9,8 @@
   <a href="#">
     <img alt="语言类型" src="https://img.shields.io/badge/language-Python-blue?style=flat&logo=python&logoColor=white" />
   </a>
-  <a href="https://github.com/yuexdang/DandJourney/blob/main/Doc/UpdateLogs.md">
+  <a href="./Docs/UpdateLogs.md">
     <img alt="更新日志" src="https://img.shields.io/badge/Update--Log-ClickHere-brightgreen?style=flat&logo=uploaded&logoColor=white" />
-  </a>
-  <a href="https://github.com/yuexdang/DandJourney/releases">
-    <img alt="更新版本" src="https://img.shields.io/github/downloads/yuexdang/DandJourney/total.svg?style=flat&logo=docusign&logoColor=white" />
   </a>
   <a href="#">
     <img alt="支持平台" src="https://img.shields.io/badge/chat-discord-blue?style=flat&logo=discord&logoColor=white" />
@@ -27,16 +24,16 @@
   <a href="#">
     <img alt="zh-cn" src="https://img.shields.io/badge/-%E4%B8%AD%E6%96%87-blue" />
   </a> 
-  <a href="https://github.com/yuexdang/DandJourney/blob/main/Doc/README_EN.md">
+  <a href="./README_EN.md">
     <img alt="en" src="https://img.shields.io/badge/-ENGLISH-lightgrey" />
   </a> 
 </p>
 
 # 关于DandJourney
 
-DandJourney 是一款封装与拓展了 Midjourney 的代理机器人。这个机器人主要用来转发用户诉求给MidJourney（位于Discord平台），通过机器人的代理使得多个人可以用一个会员账号。是的，没有任何办法可以绕过Midjourney的会员机制。
+DandJourney 是一款封装与拓展了 Midjourney 的代理机器人。这个机器人主要用来转发用户诉求给MidJourney（位于Discord平台），通过机器人的代理，平衡了用户的机器人使用需求，同时尝试在不同的平台上进行机器人拓展。
 
-- 更多的平台支持
+- 更多的平台支持（开发中）
 - 更多的自定义功能
 - 更多的拓展空间
 
@@ -48,7 +45,9 @@ stable-diffusion虽然免费，但是基于神经网络的训练十分消耗自�
 
 在没有更好的载体的情况之下，这个项目会持续更新。
 
-项目是**开源**的，大家都希望能够一起合作去制作这样一款Bot，方便平时的使用。如果非项目组成员拿着这个项目去**盈利**，或者拿这个当噱头去**引流**，我的评价是好死。
+项目是**开源**的，Bot的制作只是为了方便平时的使用。禁止非项目组成员使用项目去**盈利**或**引流**。
+
+声明：此机器人仅用于学习使用
 
 # 功能列表
 |  功能  | 简介 | 状态 |
@@ -80,11 +79,11 @@ stable-diffusion虽然免费，但是基于神经网络的训练十分消耗自�
 
 > ### **本地部署**
 >
->具体的使用方法详见[使用文档](https://github.com/yuexdang/DandJourney/blob/main/Doc/Usage.md).
+>具体的使用方法详见[使用文档](./Docs/Usage.md).
 
 # 更新日志
 
-更新日志详见[更新日志](https://github.com/yuexdang/DandJourney/blob/main/Doc/UpdateLogs.md)。
+更新日志详见[更新日志](./Docs/UpdateLogs.md)。
 
 # 志同道合的朋友们（贡献者）
 
@@ -107,13 +106,17 @@ stable-diffusion虽然免费，但是基于神经网络的训练十分消耗自�
     <td>整体代码功能实现、需求实现</td>
   </tr>
   <tr>
-    <td rowspan="2">功能代码研究</td>
+    <td rowspan="3">功能代码研究</td>
     <td><a href="https://github.com/DronerC">DronerC</a></td>
     <td>代码抽离、功能发散</td>
   </tr>
   <tr>
     <td><a href="https://github.com/JerryLiu666">JerryLiu666</a></td>
     <td>代码抽离、功能发散</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/siyuekoo">siyuekoo</a></td>
+    <td>前端代码</td>
   </tr>
   <tr>
     <td rowspan="5">图片风格化研究</td>
@@ -129,11 +132,11 @@ stable-diffusion虽然免费，但是基于神经网络的训练十分消耗自�
     <td>图像风格化</td>
   </tr>
   <tr>
-    <td><a href="https://github.com/unbengab19">unbengab19</a></td>
+    <td><a href="https://github.com/SimonYu13">SimonYu13</a></td>
     <td>图像风格化</td>
   </tr>
   <tr>
-    <td><a href="https://github.com/SimonYu13">SimonYu13</a></td>
+    <td><a href="https://github.com/unbengab19">unbengab19</a></td>
     <td>图像风格化</td>
   </tr>
   <tr>
@@ -147,14 +150,18 @@ stable-diffusion虽然免费，但是基于神经网络的训练十分消耗自�
     <td>图像制作，Icon制作</td>
   </tr>
   <tr>
-    <td>其他贡献者</td>
+    <td rowspan="2">其他贡献者</td>
     <td><a href="https://github.com/liustar1989">liustar1989</a></td>
     <td>提供部分wechat连接思路</td>
   </tr>
   <tr>
-  <th></th>
-  <th></th>
-  <th></th>
+    <td><a href="https://github.com/xxvcxxvc">xxvcxxvc</a></td>
+    <td>图片转存逻辑与其他代码</td>
+  </tr>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
   </tr>
 </tbody>
 </table>

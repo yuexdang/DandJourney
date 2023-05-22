@@ -8,6 +8,9 @@ Morph = {
     "upsample" : "45bc04dd4da37141a5f73dfbfaf5bdcf",
     "variation" : "1f3dbdf09efdf93d81a3a6420882c92c",
     "reroll" : "712c631b97b9133f3eb51dce5a5db9d1",
+    "remaster" : "3e9a692ad1bb3570861bf14d2bd8b7fe",
+    "upsample_light" : "7ae8ee8ef6ffa44fb4d9702a88fd93ed",
+    "upsample_beta" : "7ae8ee8ef6ffa44fb4d9702a88fd93ed",
 }
 
 Fast = {
@@ -22,14 +25,14 @@ Relax = {
     "id" : "972289487818334213",
 }
 
-BlendOld = {
-    "session_id" : "2e7e35bd8fe36cfca73a9ca7e1657e60",
+Blend = {
+    "session_id" : "6105f01666b0ca19aabc13c9862c638c",
     "version" : "1067631020041580584",
     "id" : "1062880104792997970",
 }
 
-Blend = {
-    "session_id" : "c269568080d93511fcf8cb24b04673c9",
-    "version" : "1067631020041580584",
-    "id" : "1062880104792997970",
+Describe = {
+    "session_id" : "5be666160a2dc210a99c460d38c30a61",
+    "version" : "1092492867185950853",
+    "id" : "1092492867185950852",
 }

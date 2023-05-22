@@ -3,9 +3,13 @@ from .Globals import Morph as MorphPrompt
 from .Globals import Fast as FastPrompt
 from .Globals import Relax as RelaxPrompt
 from .Globals import Blend as BlendPrompt
+from .Globals import Describe as DescribePrompt
 
 
 def JsonImagine(MID_JOURNEY_ID : str, SERVER_ID : str, CHANNEL_ID : str, prompt : str) -> dict:
+    """
+    Imagine 方法请求参数生成
+    """
     __payload = {
         "type":2,
         "application_id": MID_JOURNEY_ID,
@@ -36,6 +40,10 @@ def JsonImagine(MID_JOURNEY_ID : str, SERVER_ID : str, CHANNEL_ID : str, prompt 
     return __payload
 
 def JsonMorph(MID_JOURNEY_ID : str, SERVER_ID : str, CHANNEL_ID : str, index : int, messageId : str, messageHash : str, morph : str, solo : bool = False) -> dict:
+    """
+    PicMorph 方法请求参数生成
+    包含 upsample、variation、reroll 三种方法
+    """
     __payload = {
         "type":3,
         "guild_id":SERVER_ID,
@@ -53,6 +61,9 @@ def JsonMorph(MID_JOURNEY_ID : str, SERVER_ID : str, CHANNEL_ID : str, index : i
 
 
 def JsonFast(MID_JOURNEY_ID : str, SERVER_ID : str, CHANNEL_ID : str):
+    """
+    Fast 方法请求参数生成
+    """
     __payload = {
         "type":2,
         "application_id":MID_JOURNEY_ID,
@@ -76,6 +87,9 @@ def JsonFast(MID_JOURNEY_ID : str, SERVER_ID : str, CHANNEL_ID : str):
 
 
 def JsonRelax(MID_JOURNEY_ID : str, SERVER_ID : str, CHANNEL_ID : str) -> dict:
+    """
+    Relax 方法请求参数生成
+    """
     __payload = {
         "type":2,
         "application_id":MID_JOURNEY_ID,
@@ -98,7 +112,18 @@ def JsonRelax(MID_JOURNEY_ID : str, SERVER_ID : str, CHANNEL_ID : str) -> dict:
     return __payload
 
 
+def JsonRegImg(filename : str, filesize : int) -> dict:
+    """
+    图片转存 请求参数生成
+    """
+    __payload = {"files": [{"filename": filename, "file_size": filesize, "id": 0}]}
+    return __payload
+
+
 def JsonBlend(MID_JOURNEY_ID : str, SERVER_ID : str, CHANNEL_ID : str, options : list, attachments : list) -> dict:
+    """
+    Blend 方法请求参数生成
+    """
     __payload = {
         "type":2,
         "application_id":MID_JOURNEY_ID,
@@ -124,6 +149,33 @@ def JsonBlend(MID_JOURNEY_ID : str, SERVER_ID : str, CHANNEL_ID : str, options :
                     {"type":11,"name":"image5","description":"Fifth image to add to the blend (optional)"}
                 ]
             },"attachments":attachments,
+        }
+    }
+    return __payload
+
+
+def JsonDescribe(MID_JOURNEY_ID : str, SERVER_ID : str, CHANNEL_ID : str, attachments : list) -> dict:
+    """
+    Describe 方法请求参数生成
+    """
+    __payload = {
+        "type":2,
+        "application_id":MID_JOURNEY_ID,
+        "guild_id":SERVER_ID,
+        "channel_id":CHANNEL_ID,
+        "session_id":DescribePrompt["session_id"],
+        "data":{
+            "version":DescribePrompt["version"],
+            "id":DescribePrompt["id"],
+            "name":"describe","type":1,"options":[{"type":11,"name":"image","value":0}],
+            "application_command":{
+                "id":DescribePrompt["id"],
+                "application_id":MID_JOURNEY_ID,
+                "version":DescribePrompt["version"],
+                "default_member_permissions":None,"type":1,"nsfw":False,"name":"describe",
+                "description":"Writes a prompt based on your image.","dm_permission":True,"contexts":None,
+                "options":[{"type":11,"name":"image","description":"The image to describe","required":True}]
+            },"attachments":attachments
         }
     }
     return __payload

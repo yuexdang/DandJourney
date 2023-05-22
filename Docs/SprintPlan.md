@@ -19,10 +19,10 @@
 
 - ✅ 继承 Version 1的原有功能
 - ✅ 优化整体结构框架，降低耦合
-- 🈚 拓展功能，支持MidJourney所有共有型功能
-  - 🈚 Blend 图片融合功能
-  - 🈚 Discribe 图片描述功能
-  - 🈚 Upscale 生成图片后的再细分
+- ✅ 拓展功能，支持MidJourney所有共有型功能
+  - ✅ Blend 图片融合功能
+  - ✅ Discribe 图片描述功能
+  - ✅ Upscale 生成图片后的再细分
 - ✅ 优化交互方式，交互组件化
 - 🔜 定时任务
 
@@ -37,7 +37,7 @@
 ### DandJourney V2.2
 <hr color=#682 align="left" width=300>
 
-- 🔜 支持频道中转，隔离Midjourney的消息
+- ✅ 支持频道中转，隔离Midjourney的消息
 - 🔜 支持Flask平台的整体控制
 - 🔜 全局变量入库
 
