@@ -1,0 +1,243 @@
+/* 右侧聊天窗口 */
+
+.window {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-grow: 1;
+    min-width: 400px;
+    min-height: 200px;
+}
+
+.chat-window {
+    margin: 20px;
+    width: 90%;
+    min-width: 300px;
+    flex: 6;
+
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 0.8px solid #a273ff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #a273ff4d;
+
+    overflow-y: auto;
+}
+
+/* 设置滚动条窗口宽度和透明 */
+/* 暂时取消掉滚动条 */
+.chat-window::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+/* 设置滚动条拇指颜色 */
+.chat-window::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 4px;
+}
+
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.messageServerSend {
+    max-width: 70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+
+    align-self: flex-start;
+    background-color: #f4f6f8;
+
+    /* 以下代码解决在textarea内文本换行问题，也解决textarea的value交付给div后文本显示问题 */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.messageUserSend {
+    max-width: 70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+
+    align-self: flex-end;
+    background-color: #a273ff7c;
+
+    /* 以下代码解决在textarea内文本换行问题，也解决textarea的value交付给div后文本显示问题 */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+.card {
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    width: 60%;
+    min-width: 350px;
+
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.144);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-button {
+    width: 50px;
+    height: 30px;
+    box-sizing: border-box;
+
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+
+    background: rgb(255, 255, 255) url('img/arrow.png') no-repeat center center;
+    background-size: 50%;
+    filter: grayscale(100%);
+
+    cursor: pointer;
+    transition: transform 0.5s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button-vary {
+    transform: rotate(180deg);
+    filter: grayscale(0%);
+}
+
+.menu-button:hover {
+    background-color: #ececf1;
+}
+
+.input-menu {
+    display: none;
+    z-index: 1;
+
+    position: absolute;
+    /* 下面两行的值都是父块的百分比 */
+    bottom: 120%;
+    left: 0%;
+
+    box-sizing: border-box;
+    padding: 5px;
+
+    background-color: #fff;
+    border: 1px solid #73fff8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #37e97b4d;
+}
+
+.input-menu .choice {
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.input-menu .choice:hover {
+    background-color: #5ffdf557;
+    cursor: pointer;
+}
+
+.show-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    width: 100%;
+
+    background-color: white;
+    border: 0.8px solid #a273ff;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #a273ff4d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    height: 16px;
+
+
+    border: none;
+    resize: none;
+    box-sizing: border-box;
+
+    margin: 5px;
+
+    font-size: 16px;
+    line-height: 16px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.input::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+.input::placeholder {
+    color: rgb(192, 192, 192);
+}
+
+.input:focus {
+    outline: none;
+}
+
+/* 子元素获得焦点时，改变父元素样式 */
+.input-container:focus-within {
+    border: 0.8px solid #ff73a2;
+    box-shadow: 0 0 10px #cc203c4d;
+}
+
+
+.send-button {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 20%;
+    margin-left: 10px;
+
+    background: rgb(255, 255, 255) url('img/placeholder.png') no-repeat center center;
+    background-size: 70%;
+}
+
+.send-button:hover {
+    background-color: #ececf1;
+}
