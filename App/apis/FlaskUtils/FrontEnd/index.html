@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="提供与Midjourney一样的服务，但是打骨折">
+    <title>Dandjourney</title>
+    <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="right.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="shortcut icon" href="img/paym.ico">
+
+
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- 左侧边栏 -->
+        <div class="sidebar">
+            <div class="sidebar-head">
+                <img class="logo" src="img/logo.png" alt="logo">
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="index.html">
+                            <img class="sidbr-mnu-ic" src="img/placeholder.png" alt="">
+                            <span>立即开始</span>
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img class="sidbr-mnu-ic" src="img/placeholder.png" alt="">
+                            <span>历史创作</span>
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <img class="sidbr-mnu-ic" src="img/placeholder.png" alt="">
+                            <span>支持我们</span>
+                        </a>    
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="sidebar-user">
+                <hr>
+                <div class="user">
+                    <img class="avatar" src="img/bigPaym.png" alt="">
+                    <span class="account">1000001</span>
+                    <img class="sign" src="img/placeholder.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 右侧聊天页面 -->
+        <div class="window">
+            <div class=chat-window>
+                <div class="messages"></div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <button class="menu-button">                             
+                    </button>
+                    <div id="myMenu" class="input-menu">
+                        <button class="choice" id="strawberry">strawberry</button>
+                        <button class="choice" id="banana">banana</button>
+                        <button class="choice" id="apple">apple</button>
+                    </div>
+                    <div class="input-container">
+                        <textarea class="input" placeholder="在这里输入你的想法ヾ(≧▽≦*)o"></textarea>
+                    </div>
+                    <button class="send-button"></button>
+                </div>
+            </div>
+        </div>
+        <!-- 输入框按钮弹窗 -->
+        <div id="popup" class="popupclose">
+            <div class="notice-window">
+                <h3 class="title">图像生成</h3>
+                <h4 class="prompt">Prompt</h4>
+                <textarea class="input-prompt" placeholder="在这里输入你的想法ヾ(≧▽≦*)o"></textarea>
+                <h4 class="option">Option</h4>
+                <!-- div本身没有focus属性，但是加上tabindex就可以使用 -->
+                <div class="ajust-container" tabindex="111">
+                    <!-- 滑动托槽预留位置 -->
+                </div>
+                <h4 class="getpicture">getPicture</h4>
+                <div class="pictures"> 
+                    <!-- 图片装载位置 -->
+                </div>
+                <div class="popup-buttons">
+                    <div class="confirm">确认</div>
+                    <div class="cancel">取消</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
