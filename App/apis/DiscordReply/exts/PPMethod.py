@@ -51,7 +51,7 @@ class PromptMix:
         if type(result) == list:
             _prompt = LinkStr + result[0]
             return _prompt, result[1]
-        return _prompt, ""
+        return LinkStr + _prompt, ""
         
 
     def DJPromptMix(self):
