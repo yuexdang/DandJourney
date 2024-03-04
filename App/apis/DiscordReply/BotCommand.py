@@ -1,5 +1,4 @@
 from interactions import slash_command, SlashContext, Extension, Client
-import interactions
 
 from App.apis import DQueueFQID
 
@@ -28,12 +27,15 @@ class BotCommandCls(Extension):
 
     @slash_command(name="dsettings", description="DandJourney设置")
     async def dsettings(self, ctx: SlashContext, **kwargs):
-        VersionComponent = CreateMultipleButtons(ButtonName = ["Fast", "Relax"], 
-                                                styleDic={BotSettings["BotInit"]["Speed"]: 1}, 
-                                                disableDic={BotSettings["BotInit"]["Speed"]: True}, 
-                                                padding = [2], instantiation = True)
-        VersionComponent = VersionComponent[1] if VersionComponent[0] else None
-        await ctx.send(content = "机器人设置", components = VersionComponent)
+        if BotSettings["MemberSet"]["ADMINSID"] and BotSettings["MemberSet"]["ADMINSID"] not in ctx.member._role_ids:
+            await ctx.send(content = "您无权设置机器人的模式", ephemeral = True)
+        else:
+            VersionComponent = CreateMultipleButtons(ButtonName = ["Fast", "Relax"], 
+                                                    styleDic={BotSettings["BotInit"]["Speed"]: 1}, 
+                                                    disableDic={BotSettings["BotInit"]["Speed"]: True}, 
+                                                    padding = [2], instantiation = True)
+            VersionComponent = VersionComponent[1] if VersionComponent[0] else None
+            await ctx.send(content = "机器人设置", components = VersionComponent)
 
     @slash_command(name="dabout", description="关于DandJourney")
     async def dabout(self, ctx: SlashContext, **kwargs):
@@ -109,6 +111,60 @@ class BotCommandCls(Extension):
 
         kwargs.update({"prompt": prompt, "area": area, "no": no, "quality": quality, "style": style, "stylize": stylize, "niji": niji, 
                        "seed": seed, "chaos": chaos, "image": image, "imageratio": imageratio, "QueueKey": _insert[0][1], "version": "5.1"})
+        _PromptMix = PromptMix(**kwargs)
+        prompt = _PromptMix.DJPromptMix()
+        if prompt[0]:
+            _channel = BotSettings["BotOpt"]["AGENT_CHANNEL"] if BotSettings["BotOpt"]["AGENT_SIGN"] else ctx.channel.id
+            response = PostAgent.Imagine("<#{}> {}".format(_insert[0][1], prompt[1]), channel = _channel)
+            if response[0]:
+                await ctx.send("DandJourney接收参数:{}".format(prompt[1]))
+            else:
+                await ctx.send(response[1])
+        else:
+            SystemQueue.delete_queue_value(DQueueID, _insert[0][1])
+            await ctx.send(prompt[1])
+    
+    @dj.subcommand(
+        sub_cmd_name="v5_2",
+        sub_cmd_description="DandJourney图像生成 For Version 5.2 版本",
+        # 5.2未更新新的提示词
+        options=PromptCls.MultiplePrompt(BotSettings["BotParam"]["DJPrompt"]["Version5.1"]),
+    )
+    async def djv52(self, ctx: SlashContext, prompt:str, 
+                   area:str = "", no:str = "", style:bool = True, quality:float = None, stylize:int = None, niji:int = None, 
+                   seed:int = None, chaos:int = None, image:object = None, imageratio:int = None, **kwargs):
+        ChannelSwitch(ctx)
+        _insert = SystemQueue.insert_queue(DQueueID,{"User":ctx.author_id, "Channel":ctx.channel_id, "Mode":"UV"})
+
+        kwargs.update({"prompt": prompt, "area": area, "no": no, "quality": quality, "style": style, "stylize": stylize, "niji": niji, 
+                       "seed": seed, "chaos": chaos, "image": image, "imageratio": imageratio, "QueueKey": _insert[0][1], "version": "5.2"})
+        _PromptMix = PromptMix(**kwargs)
+        prompt = _PromptMix.DJPromptMix()
+        if prompt[0]:
+            _channel = BotSettings["BotOpt"]["AGENT_CHANNEL"] if BotSettings["BotOpt"]["AGENT_SIGN"] else ctx.channel.id
+            response = PostAgent.Imagine("<#{}> {}".format(_insert[0][1], prompt[1]), channel = _channel)
+            if response[0]:
+                await ctx.send("DandJourney接收参数:{}".format(prompt[1]))
+            else:
+                await ctx.send(response[1])
+        else:
+            SystemQueue.delete_queue_value(DQueueID, _insert[0][1])
+            await ctx.send(prompt[1])
+
+    @dj.subcommand(
+        sub_cmd_name="v6",
+        sub_cmd_description="DandJourney图像生成 For Version 6 版本",
+        # 6未更新新的提示词
+        options=PromptCls.MultiplePrompt(BotSettings["BotParam"]["DJPrompt"]["Version5.1"]),
+    )
+    async def djv6(self, ctx: SlashContext, prompt:str, 
+                   area:str = "", no:str = "", style:bool = True, quality:float = None, stylize:int = None, niji:int = None, 
+                   seed:int = None, chaos:int = None, image:object = None, imageratio:int = None, **kwargs):
+        ChannelSwitch(ctx)
+        _insert = SystemQueue.insert_queue(DQueueID,{"User":ctx.author_id, "Channel":ctx.channel_id, "Mode":"UV"})
+
+        kwargs.update({"prompt": prompt, "area": area, "no": no, "quality": quality, "style": style, "stylize": stylize, "niji": niji, 
+                       "seed": seed, "chaos": chaos, "image": image, "imageratio": imageratio, "QueueKey": _insert[0][1], "version": "6"})
         _PromptMix = PromptMix(**kwargs)
         prompt = _PromptMix.DJPromptMix()
         if prompt[0]:
